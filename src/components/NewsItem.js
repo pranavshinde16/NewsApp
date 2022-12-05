@@ -8,7 +8,7 @@ export default function NewsItem(props) {
       <div style={{ display: "flex", justifyContent: "flex-end", position: "absolute", right: "0" }}>
         <span className="badge rounded-pill bg-danger">{source}</span>
       </div>
-      <img src={!imageUrl ? "https://images.wsj.net/im-642705/social" : imageUrl} className="card-img-top" alt="..."></img>
+      <img src={!imageUrl ? "https://industrywired.b-cdn.net/wp-content/uploads/2020/07/Emerging-Technology.jpg" : imageUrl} className="card-img-top" alt="..."></img>
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{!description ? "No Description given by the source" : description}...</p>

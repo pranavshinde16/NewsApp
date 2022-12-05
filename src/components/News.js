@@ -11,9 +11,7 @@ export default function News(props) {
   const [totalArticles, setTotalArticles] = useState(0);
 
   const capitalizeFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
+    return string.charAt(0).toUpperCase() + string.slice(1); }
 
   // Update Function
   const updateNews= async() =>{
