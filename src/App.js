@@ -32,3 +32,5 @@ export default function App() {
   )
 }
 
+// npm start
+

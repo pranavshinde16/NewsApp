@@ -66,7 +66,7 @@ export default function News(props) {
                       key={element.url}
                       description={
                         element.description
-                          ? element.description.slice(0, 80)
+                          ? element.description.slice(0, 120)
                           : ""
                       }
                       imageUrl={element.urlToImage}
