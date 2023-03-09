@@ -1,10 +1,13 @@
 import React from 'react'
 
 export default function NewsItem(props) {
-  let { title, description, imageUrl, newsUrl, time, author, source } = props;
+  let { title, description, imageUrl, newsUrl, time, author, source, mode } = props;
   return (
-    <div className="my-3">
-      <div className="card" style={{height:"100%"}}>
+    <div className="my-3 shadow">
+      <div className={`card ${mode === "dark" ? "bg-black-gradient-2 box-shadow" : ""} feedback-card`} style={{
+        height: "100%", color: mode === "dark" ? "white" : "black",
+        // backgroundColor: mode === "dark" ? "#191c24" : "white",
+      }}>
         <div style={{ display: "flex", justifyContent: "flex-end", position: "absolute", right: "0" }}>
           <span className="badge rounded-pill bg-danger">{source}</span>
         </div>
@@ -13,7 +16,7 @@ export default function NewsItem(props) {
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{!description ? "No Description given by the source" : description}...</p>
           <p className="card-text"><small className="text-muted"><strong>by :</strong> {!author ? "unknown" : author} on {new Date(time).toGMTString()}</small></p>
-          <a rel="noopener noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
+          <a rel="noopener noreferrer" href={newsUrl} target="_blank" className={`btn btn-sm btn-${mode==="dark" ? "info":"dark"} fw-semibold`}>
             Read More
           </a>
         </div>
