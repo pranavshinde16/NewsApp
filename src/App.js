@@ -13,8 +13,9 @@ import {
 export default function App() {
   const pageSize = 18;
   const apiKey = process.env.REACT_APP_NEWS_API
-  const [mode, setMode] = useState("light") // Whether the dark mode is enabled or not
+  const [mode, setMode] = useState("light")                  // Whether the dark mode is enabled or not
   // const [alert, setAlert] = useState(null)
+  const [search, setSearch] = useState('');
 
   function toggleModes() {
     if (mode === "light") {
@@ -37,7 +38,7 @@ export default function App() {
   return (
     <div className='clr'>
       <BrowserRouter>
-        <Navbar mode={mode} toggleMode={toggleModes}/>
+        <Navbar mode={mode} search={search} toggleMode={toggleModes}/>
         <Routes>
           <Route exact path="/" element={<News mode={mode} key="general" apiKey={apiKey} country="us" pageSize={pageSize} category="general" />}></Route>
           <Route exact path="/sports" element={<News mode={mode} key="sports" apiKey={apiKey} country="us" pageSize={pageSize} category="sports" />}></Route>

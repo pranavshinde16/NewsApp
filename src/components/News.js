@@ -10,6 +10,8 @@ export default function News(props) {
   const [page, setPage] = useState(1);
   const [totalArticles, setTotalArticles] = useState(0);
   // const [query, setQuery] = useState("");
+  const [search, setSearch] = useState('');
+
 
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -51,6 +53,12 @@ export default function News(props) {
           &#10031;  News Tracker - Top headlines from {capitalizeFirstLetter(props.category)} domain &#10031;
         </h2>
       </div>
+      <div id="searchBar">
+        <form className="d-flex" role="search">
+          <input style={{width:"500px"}} className="form-control me-2" type="search" placeholder="Search news" aria-label="Search" onChange={(e) => setSearch(e.target.value)} />
+          <button className="btn btn-outline-info mx-3" type="submit">Search</button>
+        </form>
+      </div>
 
       {loading && <Spinner />}
 
@@ -62,7 +70,13 @@ export default function News(props) {
       >
         <div className="container">
           <div className="row my-4">
-            {articles.map((element) => {
+            {articles.filter((element) => {
+              if (props.search === "") {
+                return element;
+              } else if (element.title.toLowerCase().includes(search.toLowerCase())) {
+                return element;
+              }
+            }).map((element) => {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItem
