@@ -11,11 +11,11 @@ import {
 } from "react-router-dom";
 
 export default function App() {
-  const pageSize = 18;
+  const countryName = "us";
+  const pageSize = 15;
   const apiKey = process.env.REACT_APP_NEWS_API
   const [mode, setMode] = useState("light")                  // Whether the dark mode is enabled or not
   // const [alert, setAlert] = useState(null)
-  const [search, setSearch] = useState('');
 
   function toggleModes() {
     if (mode === "light") {
@@ -38,15 +38,15 @@ export default function App() {
   return (
     <div className='clr'>
       <BrowserRouter>
-        <Navbar mode={mode} search={search} toggleMode={toggleModes}/>
+        <Navbar mode={mode} toggleMode={toggleModes}/>
         <Routes>
-          <Route exact path="/" element={<News mode={mode} key="general" apiKey={apiKey} country="us" pageSize={pageSize} category="general" />}></Route>
-          <Route exact path="/sports" element={<News mode={mode} key="sports" apiKey={apiKey} country="us" pageSize={pageSize} category="sports" />}></Route>
-          <Route exact path="/business" element={<News mode={mode} key="business" apiKey={apiKey} country="us" pageSize={pageSize} category="business" />}></Route>
-          <Route exact path="/entertainment" element={<News mode={mode} key="entertainment" apiKey={apiKey} country="in" pageSize={pageSize} category="entertainment" />}></Route>
-          <Route exact path="/health" element={<News mode={mode} key="health" apiKey={apiKey} country="us" pageSize={pageSize} category="health" />}></Route>
-          <Route exact path="/science" element={<News mode={mode} key="science" apiKey={apiKey} country="us" pageSize={pageSize} category="science" />}></Route>
-          <Route exact path="/technology" element={<News mode={mode} key="technology" apiKey={apiKey} country="us" pageSize={pageSize} category="technology" />}></Route>
+          <Route exact path="/" element={<News mode={mode} key="general" apiKey={apiKey} country={countryName} pageSize={pageSize} category="business" />}></Route>
+          <Route exact path="/sports" element={<News mode={mode} key="sports" apiKey={apiKey} country={countryName} pageSize={pageSize} category="sports" />}></Route>
+          <Route exact path="/business" element={<News mode={mode} key="business" apiKey={apiKey} country={countryName} pageSize={pageSize} category="business" />}></Route>
+          <Route exact path="/entertainment" element={<News mode={mode} key="entertainment" apiKey={apiKey} country={countryName} pageSize={pageSize} category="entertainment" />}></Route>
+          <Route exact path="/health" element={<News mode={mode} key="health" apiKey={apiKey} country={countryName} pageSize={pageSize} category="health" />}></Route>
+          <Route exact path="/science" element={<News mode={mode} key="science" apiKey={apiKey} country={countryName} pageSize={pageSize} category="science" />}></Route>
+          <Route exact path="/technology" element={<News mode={mode} key="technology" apiKey={apiKey} country={countryName} pageSize={pageSize} category="technology" />}></Route>
         </Routes>
       </BrowserRouter>
 
