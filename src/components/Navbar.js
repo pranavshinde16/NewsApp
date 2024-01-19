@@ -9,7 +9,7 @@ export default function Navbar(props) {
             <nav className={`navbar navbar-${props.mode === "dark" ? "dark" : ""} bg-${props.mode === "dark" ? "dark" : ""} fixed-top navbar-expand-lg `} style={{ backgroundColor: "#e3f2fd" }}>
                 <div className="container-fluid">
                     <i className="fa fa-newspaper" style={{ marginRight: "15px", fontSize: "30px" }}></i>
-                    <Link className={`navbar-brand ${props.mode === "dark" ? "text-gradient" : ""}`} to="/" style={{ fontWeight: "700" }}>NewsTracker</Link>
+                    <Link className={`navbar-brand ${props.mode === "dark" ? "text-gradient" : ""}`} to="/" style={{ fontWeight: "700" }}>NewsPulse</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
