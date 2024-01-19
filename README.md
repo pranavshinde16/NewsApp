@@ -5,40 +5,30 @@
     </a>
   <br />
   
-  <h1 align="center">Youtube Clone - Video Streaming Application</h1>
-  
+  <h1 align="center">News Pulse - API based News Application</h1>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Developed a YouTube-inspired clone using React.js, Tailwind CSS, and Node.js. The application seamlessly integrates with the YouTube public API, offering dynamic search functionality and instant category-based video feeds. Explore a user-friendly interface with a responsive design, providing an immersive experience for discovering and enjoying a wide range of video content.
+👉 Developed responsive web application for displaying latest news from various domains.
+
+👉 Created structured and reusable components to modularapplication.
+
+👉 Integrated external News API to manipulate data on the webpage.
+
+👉 Ensured optimal performance and responsiveness across devices, prioritizing a positive user experience.
+
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
+- ReactJS
+- Bootstrap
 - Node.js
-- React.js
-- TailwindCSS
 - Javascript
 - HTML5
-- Rapid API
-
-## <a name="features">🔋 Features</a>
-
-👉 **Dynamic Search Bar :** Implemented a robust search bar using React.js, enabling users to enter keywords and find relevant videos. Leveraged the YouTube public API to retrieve real-time search results, ensuring accuracy and up-to-date content.
-
-👉 **Categorized Sidebar :** Designed a user-friendly sidebar with distinct categories such as trending, shorts, movies, music, and news.Enabled seamless navigation, allowing users to click on a category and instantly populate the feed with related videos.
-
-👉 **Video Player Integration :** Integrated a video player component to allow users to watch selected videos directly within the application.
-
-👉 **Comprehensive Video Details :** Displayed comprehensive information about each video, including title, description, upload date, and view counts.
-Integrated features for users to share videos on social media platforms and embed them on external websites.
+- News API - **https://newsapi.org/**
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -70,7 +60,7 @@ npm install
 Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-REACT_APP_YOUTUBE_API_KEY = 'YOUR API KEY'
+REACT_APP_YOUTUBE_API_KEY = 'YOUR NEWS API KEY'
 ```
 
 Replace the placeholder values with your actual credentials 
@@ -78,7 +68,7 @@ Replace the placeholder values with your actual credentials
 **Running the Project**
 
 ```bash
-npm start or npm run dev
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
