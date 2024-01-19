@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+<div align="start">
+  <br />
+    <a href="#" target="_blank">
+      <img src="https://github.com/pranavshinde16/Images/blob/main/project-4_img2.png" width="1000" height="500" alt="Project Banner">
+    </a>
+  <br />
+  
+  <h1 align="center">Youtube Clone - Video Streaming Application</h1>
+  
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 <a name="table">Table of Contents</a>
 
-## Available Scripts
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
-In the project directory, you can run:
+## <a name="introduction">🤖 Introduction</a>
 
-### `npm start`
+Developed a YouTube-inspired clone using React.js, Tailwind CSS, and Node.js. The application seamlessly integrates with the YouTube public API, offering dynamic search functionality and instant category-based video feeds. Explore a user-friendly interface with a responsive design, providing an immersive experience for discovering and enjoying a wide range of video content.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- React.js
+- TailwindCSS
+- Javascript
+- HTML5
+- Rapid API
 
-### `npm test`
+## <a name="features">🔋 Features</a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+👉 **Dynamic Search Bar :** Implemented a robust search bar using React.js, enabling users to enter keywords and find relevant videos. Leveraged the YouTube public API to retrieve real-time search results, ensuring accuracy and up-to-date content.
 
-### `npm run build`
+👉 **Categorized Sidebar :** Designed a user-friendly sidebar with distinct categories such as trending, shorts, movies, music, and news.Enabled seamless navigation, allowing users to click on a category and instantly populate the feed with related videos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👉 **Video Player Integration :** Integrated a video player component to allow users to watch selected videos directly within the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+👉 **Comprehensive Video Details :** Displayed comprehensive information about each video, including title, description, upload date, and view counts.
+Integrated features for users to share videos on social media platforms and embed them on external websites.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## <a name="quick-start">🤸 Quick Start</a>
 
-### `npm run eject`
+Follow these steps to set up the project locally on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have the following installed on your machine:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Cloning the Repository**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/your-username/your-project.git
+cd your-project
+```
 
-## Learn More
+**Installation**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install the project dependencies using npm:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+**Set Up Environment Variables**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create a new file named `.env` in the root of your project and add the following content:
 
-### Analyzing the Bundle Size
+```env
+REACT_APP_YOUTUBE_API_KEY = 'YOUR API KEY'
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Replace the placeholder values with your actual credentials 
 
-### Making a Progressive Web App
+**Running the Project**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm start or npm run dev
+```
 
-### Advanced Configuration
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
